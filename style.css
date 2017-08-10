@@ -1,0 +1,49 @@
+body {
+	background-color: #d8d8d8;
+	margin: 0;
+	padding: 0;
+}
+
+#wala {
+	background-color: #269ed6;
+	width: 500px;
+	height: 80px;
+	margin: auto;
+	padding: 0;
+}
+
+.panel {
+	margin: auto;
+	padding: 0;
+	width: 500px;
+	background-color: white;
+}
+
+.left {
+	float: left;
+	padding: 10px;
+}
+
+.right {
+	padding: 10px;
+}
+
+#basicinfo {
+	display: table-cell;
+	height:150px;
+
+} 
+
+#imgholder {
+	height: 150px;
+}
+
+img {
+	height: 150px;
+	border-radius: 50%;
+}
+
+#about {
+	height: 100%;
+	padding: 10px;
+}
