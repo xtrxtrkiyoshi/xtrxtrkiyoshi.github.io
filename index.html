@@ -6,20 +6,21 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
 <body>
-	<nav class="green accent-3">
-		<div class="nav-wrapper cyan">
+	<nav class="outer">
+		<div class="nav-wrapper inner">
 			<ul class="right">
 				<li><a href="https://github.com/xtrxtrkiyoshi">GitHub</a></li>
 				<li><a href="https://www.linkedin.com/in/lyka-macaraig-481a06157/">LinkedIn</a></li>
 			</ul>
 		</div>
-	</nav>
+	</nav>	
+	<br/>
 	<div class="container">
 		<div id="summary">
 			<header> <h3>Hi! I'm Lyka Macaraig</h3> </header><br/>
 			<div class="row valign-wrapper">
 				<div class="picture">
-					<img class="circle profile" src="img/luigi.jpg">
+					<img class="profile" src="img/luigi.jpg">
 				</div>
 				<div class="info col s9 ">
 					<h5 class="center-align">I am a Frontend Developer</h5>
@@ -28,31 +29,138 @@
 			</div>
 		</div>
 	</div>
-	<div class="pictures">
-		<div class="pix">
-			<div class="title"> <h5>Howl Away</h5> </div>
-			<div>
-				<img class="image" src="img/howl1.png"/>
-				<img class="image" src="img/howl2.png"/>
-				<img class="image" src="img/howl3.png"/>
+	<br/>
+	<div class="display">
+		<div class="pvz">
+			<header class="center-align"><h5>Professors vs studentZ</h5></header>
+			<div class="slideshow-container">
+				<div class="mySlides1 fade">
+					<img class="image" src="img/pvz1.png">
+				</div>
+				<div class="mySlides1 fade">
+					<img class="image" src="img/pvz2.png">
+				</div>
+				<div class="mySlides1 fade">
+					<img class="image" src="img/pvz3.png">
+				</div>
+
+				<a class="prev" onClick="plusSlides1(-1)">&#10094;</a>
+				<a class="next" onClick="plusSlides1(1)">&#10095;</a>
+			</div>
+			<br/>
+			<div class="center-align">
+				Professors vs studentZ is a game written in Java. It is based on the game Plants vs Zombies. The player uses general UPLB BS Computer Science student materials to keep lab instructors from getting to the front of the class. I handled the game assets and the design of the project, and the high score side of the game. 
 			</div>
 		</div>
-		<div class="pix">
-			<div class="title"> <h5>Professors vs studentZ</h5> </div>
-			<div>
-				<img class="image" src="img/pvz1.png"/>
-				<img class="image" src="img/pvz2.png"/>
-				<img class="image" src="img/pvz3.png"/>
+		<div class="howlaway">
+			<header class="center-align"><h5>Howl Away</h5></header>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img class="image" src="img/howl1.png">
+				</div>
+				<div class="mySlides fade">
+					<img class="image" src="img/howl2.png">
+				</div>
+				<div class="mySlides fade">
+					<img class="image" src="img/howl3.png">
+				</div>
+
+				<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br/>
+			<div class="center-align">
+				A mobile application game created using Android Studio and LibGDX. It is a 2D run and jump game about a wolf that escaped a zoo. The game has randomized obstacles, bonuses, coins, and power-ups. It also has a shop for players to choose their wolf. The project was done as a group for an organization requirement. The project proposal was pitched by me due to my interest in gaming, game development, and mobile application development. The project was led by me. I created most of the game assets and handled half of the frontend.
 			</div>
 		</div>
-		<div class="pix">
-			<div class="title"> <h5>QuIsko</h5> </div>
-			<div>
-				<img class="image" src="img/qu1.png"/>
-				<img class="image" src="img/qu2.png"/>
-				<img class="image" src="img/qu3.png"/>
+		<div class="quisko">
+			<header class="center-align"><h5>Professors vs studentZ</h5></header>
+			<div class="slideshow-container">
+				<div class="mySlides2 fade">
+					<img class="image" src="img/qu1.png">
+				</div>
+				<div class="mySlides2 fade">
+					<img class="image" src="img/qu2.png">
+				</div>
+				<div class="mySlides2 fade">
+					<img class="image" src="img/qu3.png">
+				</div>
+
+				<a class="prev" onClick="plusSlides2(-1)">&#10094;</a>
+				<a class="next" onClick="plusSlides2(1)">&#10095;</a>
+			</div>
+			<br/>
+			<div class="center-align">
+				Trivia game that enables the user to play, create, edit and delete quizzes under categories. It keeps track of the scores of players and the categories they played in. ReactJS, NodeJS and MongoDB were used in the creation of the web application. The project was done as a group for a course requirement. I implemented the design and did half of the work for the frontend. 
 			</div>
 		</div>
 	</div>
+		
+	<footer>
+		
+	</foot	er>
 </body>
+<script type="text/javascript">
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  
+		  slides[slideIndex-1].style.display = "block"; 
+		  
+		}
+
+		showSlides1(slideIndex);
+
+		function plusSlides1(n) {
+		  showSlides1(slideIndex += n);
+		}
+
+		function showSlides1(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides1");
+		  
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  
+		  slides[slideIndex-1].style.display = "block"; 
+		  
+		}
+
+		showSlides2(slideIndex);
+
+		function plusSlides2(n) {
+		  showSlides2(slideIndex += n);
+		}
+
+		function showSlides2(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides2");
+		  
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  
+		  slides[slideIndex-1].style.display = "block"; 
+		  
+		}
+</script>
 </html>
